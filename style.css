@@ -1,0 +1,298 @@
+/* Global Styling */
+*, html, body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header and Navigation */
+/* Header */
+header {
+    background: #161b22;
+    color:#eaeaea;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    margin-right: auto;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all .5s  ease 0s;
+}
+.logo:hover {
+    color: #ff6a3d;
+    transform: rotate(2deg);
+}
+
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-button {
+    margin: 0 15px;
+}
+
+.nav-button {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #58a6ff;
+    color: black;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 50px;
+    background-color: #0d1117;
+    background: linear-gradient(to right,#0d1117, #161b22);
+}
+
+.hero-content {
+    text-align: left;
+    color: #eaeaea;
+    animation: fadeIn 1.5s ease-in-out;
+    margin-top: 50px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin: 10px 0;
+    color: #58a6ff;
+}
+
+.hero-content p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+.im {
+    color: #eaeaea;
+    font-size: 1.2rem;
+}
+
+/* Styling untuk social icons */
+.social-icons {
+    display: flex;
+    text-align: left;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.social-icons a {
+    font-size: 2rem;
+    color: #eaeaea; /* Warna default */
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect dengan warna khas platform */
+.social-icons a[aria-label="Instagram"]:hover {
+    color: #E1306C; /* Warna khas Instagram */
+}
+
+.social-icons a[aria-label="TikTok"]:hover {
+    color: rgb(103, 186, 188); /* Warna khas TikTok */
+}
+
+.social-icons a[aria-label="Facebook"]:hover {
+    color: #1877F2; /* Warna khas Facebook */
+}
+
+.social-icons a[aria-label="WhatsApp"]:hover {
+    color: #25D366; /* Warna khas WhatsApp */
+}
+
+/* Animasi zoom */
+.social-icons a:hover {
+    transform: scale(1.2); /* Efek zoom */
+}
+/* Profile Picture */
+.profile-pic img {
+    border-radius: 50%;
+    border: 5px solid #58a6ff;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0px 0px 20px 5px #58a6ff;
+    transition: transform 0.3s;
+    animation: scaleUp 1.5s ease-in-out;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }to {
+         opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes scaleUp {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.profile-pic img:hover {
+    transform: scale(1.1);
+}
+
+.btn {
+    display: inline-block;
+    margin: 50px 5px;
+    padding: 10px 20px;
+    background-color: #58a6ff;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #36a3f5;
+    transform: translateY(-3px);
+}
+
+/* Existing styles... */
+
+nav {
+    text-align: center; /* Center the buttons */
+    margin: 20px 0; /* Add some margin */
+}
+
+.nav-button {
+    background-color: transparent; /* Transparent background */
+    color: #eaeaea; /* Text color */
+    padding: 0px 10px; /* Padding */
+    border:none;
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    margin: 0 10px; /* Space between buttons */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.nav-button:hover {
+    color: #eaeaea;
+    transform: rotate(2deg);
+
+}
+
+/* Existing styles... */
+
+/* Existing styles... */
+
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+.description{
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+
+.about {
+    background-image: url('gambar1.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.tentang {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #1A2238;
+    color: #eaeaea;
+    padding: 40px;
+
+}
+
+/* Sections */
+section {
+    padding: 4em 2em;
+    text-align: center;
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+}
+
+.project {
+    background: #f4f4f4;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: left;
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+}
+
+.typewriter {
+    margin-left: 5px;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    border-right: 0.15em solid #eaeaea;
+    color: #58a6ff;
+    white-space: nowrap;
+    animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #58a6ff; }
+}
+

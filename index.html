@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUKMAN TL</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">LUKMAN TL</h1>
+        <nav>
+            <ul>
+                <button class="nav-button" onclick="location.href='#home'">HOME</button>
+                <button class="nav-button" onclick="location.href='#about'">ABOUT</button>
+                <button class="nav-button" onclick="location.href='#projects'">PROJECT</button>
+                <button class="nav-button" onclick="location.href='#contact'">KONTAK</button>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p>Hello, it's me</p>
+            <h1>Lukman Tria Leksono</h1>
+            <p><span class="im"> I'm a</span> <span class="typewriter"> Frontend Developper </span></p>
+            <p>I'm an informatics student of university of Terbuka Purwokerto who likes design and technologi</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/tlukman_/" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@tl.lukman" target="_blank" aria-label="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://www.facebook.com/Tl Tl" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://wa.me/6285729854116" target="_blank" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+            <a href="#about" class="btn">More About Me</a>
+        <a href="#projects" class="btn">View Projects</a>
+         
+        </div>
+        <div class="profile-pic">
+            <img src="hero.jpg" alt="Profile picture">
+        </div>
+    </section>
+
+    <section id="about">
+   <div class="about">
+        <div class="tentang">
+        <p class="title">Saya adalah Programmer</p>
+        <p class="description">Saya telah mengerjakan berbagai proyek menarik. Saya berharap dapat berkolaborasi dengan Anda!</p>
+        </div>
+   </div>
+    </section>
+    
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Short description of the project.</p>
+            </div>
+            <div class="project">
+                <img src="project2.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>Short description of the project.</p>
+            </div>
+            <div class="project">
+                <img src="project3.jpg" alt="Project 3">
+                <h3>Project 3</h3>
+                <p>Short description of the project.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Lukman Tria Leksono. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
