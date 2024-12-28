@@ -295,43 +295,24 @@ footer {
     50% { border-color: #58a6ff; }
 }
 
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        padding: 10px;
+/* Styles for mobile devices (smaller screens) */
+@media only screen and (max-width: 600px) {
+    .container {
+      width: 90%; /* Adjust width for mobile */
+      margin: 0 auto; /* Center content */
     }
-
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
+  
+    h1 {
+      font-size: 2em; /* Reduce heading size */
     }
-
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-    }
-
-    .hero-content h1 {
-        font-size: 2rem;
-    }
-
-    .profile-pic img {
-        width: 150px;
-        height: 150px;
-    }
-
-    .about {
-        padding: 20px;
-    }
-
-    .project-grid {
-        flex-direction: column;
-        gap: 1em;
-    }
-
-    .project {
-        width: 90%;
-        margin: 0 auto;
+  }
+  
+  /* Styles for larger screens */
+  @media only screen and (min-width: 768px) {
+    .container {
+      width: 70%; /* Adjust width for tablets and desktops */
     }
 }
+    h1 {
+      font-size: 3em;
+     } /*
