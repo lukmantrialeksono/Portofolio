@@ -37,12 +37,13 @@ nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 10px 20px;
+    gap: 20px;
 }
 
 .nav-button {
     margin: 0 15px;
+    
 }
 
 .nav-button {
@@ -294,70 +295,43 @@ footer {
     50% { border-color: #58a6ff; }
 }
 
-/* Media Query untuk Tampilan Mobile */
 @media (max-width: 768px) {
-    /* Header Navigation */
-    nav ul {
+    header {
         flex-direction: column;
-        align-items: center;
-    }
-    .nav-button {
-        margin: 5px 0;
-        font-size: 14px;
+        padding: 10px;
     }
 
-    /* Hero Section */
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
     .hero {
         flex-direction: column;
         text-align: center;
         padding: 20px;
     }
-    .hero-content {
-        margin-top: 20px;
-    }
+
     .hero-content h1 {
         font-size: 2rem;
     }
-    .hero-content p {
-        font-size: 1rem;
-    }
-    .social-icons {
-        justify-content: center;
-        gap: 10px;
-    }
 
-    /* Profile Picture */
     .profile-pic img {
         width: 150px;
         height: 150px;
     }
 
-    /* About Section */
     .about {
-        height: auto;
-        padding: 20px;
-        background-attachment: scroll; /* Hapus fixed untuk mobile */
-    }
-    .tentang {
         padding: 20px;
     }
 
-    /* Project Section */
     .project-grid {
         flex-direction: column;
         gap: 1em;
     }
+
     .project {
-        max-width: 100%;
+        width: 90%;
         margin: 0 auto;
     }
-
-    /* Contact Form */
-    form {
-        padding: 10px;
-    }
-    form label, form input, form textarea, form button {
-        font-size: 14px;
-    }
 }
-
