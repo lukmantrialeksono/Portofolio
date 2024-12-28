@@ -33,8 +33,6 @@ header {
     transform: rotate(2deg);
 }
 
-
-
 nav ul {
     display: flex;
     justify-content: center;
@@ -294,5 +292,72 @@ footer {
 @keyframes blink-caret {
     from, to { border-color: transparent; }
     50% { border-color: #58a6ff; }
+}
+
+/* Media Query untuk Tampilan Mobile */
+@media (max-width: 768px) {
+    /* Header Navigation */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-button {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    /* Hero Section */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    .hero-content {
+        margin-top: 20px;
+    }
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    .hero-content p {
+        font-size: 1rem;
+    }
+    .social-icons {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    /* Profile Picture */
+    .profile-pic img {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* About Section */
+    .about {
+        height: auto;
+        padding: 20px;
+        background-attachment: scroll; /* Hapus fixed untuk mobile */
+    }
+    .tentang {
+        padding: 20px;
+    }
+
+    /* Project Section */
+    .project-grid {
+        flex-direction: column;
+        gap: 1em;
+    }
+    .project {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Contact Form */
+    form {
+        padding: 10px;
+    }
+    form label, form input, form textarea, form button {
+        font-size: 14px;
+    }
 }
 
