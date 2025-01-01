@@ -4,7 +4,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* Styles for mobile devices (smaller screens) */
+    .container {
+      width: 90%; /* Adjust width for mobile */
+      margin: 0 auto; /* Center content */
+    }
+  
+    h1 {
+      font-size: 2em; /* Reduce heading size */
+    }
+  
+    .container {
+      width: 70%; /* Adjust width for tablets and desktops */
+    }
 }
+    h1 {
+      font-size: 3em;
+     }
+
 
 /* Header and Navigation */
 /* Header */
@@ -295,24 +312,3 @@ footer {
     50% { border-color: #58a6ff; }
 }
 
-/* Styles for mobile devices (smaller screens) */
-@media only screen and (max-width: 600px) {
-    .container {
-      width: 90%; /* Adjust width for mobile */
-      margin: 0 auto; /* Center content */
-    }
-  
-    h1 {
-      font-size: 2em; /* Reduce heading size */
-    }
-  }
-  
-  /* Styles for larger screens */
-  @media only screen and (min-width: 768px) {
-    .container {
-      width: 70%; /* Adjust width for tablets and desktops */
-    }
-}
-    h1 {
-      font-size: 3em;
-     } /*
